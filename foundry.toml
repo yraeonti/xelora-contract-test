@@ -1,0 +1,15 @@
+[profile.default]
+src = "test"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc = "0.8.26"
+fs_permissions = [{ access = "read", path = "./out-legacy" }]
+
+[profile.legacy]
+src = "src"
+out = "out-legacy"
+test = "src"
+script = "src"
+libs = []
+solc = "./solc-0.4.23"

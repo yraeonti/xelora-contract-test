@@ -1,0 +1,2 @@
+#!/bin/sh
+exec docker run --rm -i --platform linux/amd64 -v "$PWD":"$PWD" -w "$PWD" ethereum/solc:0.4.23 "$@"
